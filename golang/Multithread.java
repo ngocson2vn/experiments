@@ -9,7 +9,7 @@ class MultithreadingDemo extends Thread {
 	public void run() { 
 		try {
 			System.out.println(threadName);
-			Thread.sleep(3600000);
+			Thread.sleep(2 * 60 * 1000);
 		} catch (Exception e) { 
 			System.out.println ("Exception is caught"); 
 		} 
