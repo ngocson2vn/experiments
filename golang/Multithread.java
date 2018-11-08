@@ -19,10 +19,11 @@ class MultithreadingDemo extends Thread {
 // Main Class 
 public class Multithread { 
 	public static void main(String[] args) {
-		int n = 1000000;
+		int n = Integer.parseInt(args[0]);
 		for (int i = 0; i < n; i++) {
 			MultithreadingDemo t = new MultithreadingDemo(String.format("Thread #%d", i));
 			t.start(); 
 		} 
 	} 
 } 
+
